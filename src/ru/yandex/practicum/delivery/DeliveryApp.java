@@ -134,11 +134,11 @@ public class DeliveryApp {
         System.out.println("Выберите тип коробки: Стандартная (1), Хрупкая(2), Скоропортящаяся(3)");
         int choice = Integer.parseInt(scanner.nextLine());
         if (choice == 1) {
-            standartBox.getAllParcels();
+            System.out.println(standartBox.getAllParcels());
         } else if (choice == 2) {
-            fragileBox.getAllParcels();
+            System.out.println(fragileBox.getAllParcels());
         } else if (choice == 3) {
-            perishableBox.getAllParcels();
+            System.out.println(perishableBox.getAllParcels());
         } else {
             System.out.println("Incorrect input");
         }

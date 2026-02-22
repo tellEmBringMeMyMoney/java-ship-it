@@ -19,8 +19,8 @@ public class ParcelBox<T extends Parcel> {
         }
     }
 
-    public void getAllParcels(){
-        System.out.println(box);
+    public ArrayList<T> getAllParcels(){
+        return box;
     }
 
     private double getBoxWeight(){

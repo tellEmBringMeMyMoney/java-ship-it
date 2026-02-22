@@ -15,9 +15,8 @@ public abstract class Parcel {
         System.out.println("Посылка "+ description +" доставлена по адресу "+ deliveryAddress);
     }
 
-    double calculateDeliveryCost() {
-        return 0;
-    }
+    protected abstract double calculateDeliveryCost();
+
 
     double getWeight(){
         return weight;
@@ -25,7 +24,6 @@ public abstract class Parcel {
 
     @Override
     public String toString() {
-        String result = "Послыка " + description + ", весом " + weight;
-        return result;
+        return "Посылка " + description + ", весом " + weight;
     }
 }
